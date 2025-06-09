@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro Corrida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Cadastro de Corrida</h2>
+    <form action="integracao.php" method="post">
+        <input type="hidden" name="tipo" value="corrida">
+        <label>Origem:</label><input type="text" name="origem" required><br>
+        <label>Destino:</label><input type="text" name="destino" required><br>
+        <label>ID Passageiro:</label><input type="number" name="passageiro_id" required><br>
+        <label>ID Motorista:</label><input type="number" name="motorista_id" required><br>
+        <button type="submit">Cadastrar Corrida</button>
+    </form>
+</body>
+</html>
